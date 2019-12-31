@@ -28,12 +28,13 @@ int main()
 	print(v2.begin(), v2.end());
 
 	vector<int>::iterator itrtv1 = v1.begin() + 3;
-	cout << "Iteratorjeva vrednost pred: " << *itrtv1 << endl; 
+	cout << "Iteratorjeva vrednost pred swapom: " << *itrtv1 << endl;
 
 	cout << "Swapping elements.\n";
 	v1.swap(v2);
 
-	cout << "Iteratorjeva vrednost po: " << *itrtv1 << endl;
+	cout << "Iteratorjeva vrednost po swapu: " << *itrtv1 << endl;
+	cout << "Vidimo, da se je iterator ohranil, s to razliko, da sedaj kaze na drug vector in ne vec na prvega."
 
 	cout << "v1: ";
 	print(v1.begin(), v1.end());
